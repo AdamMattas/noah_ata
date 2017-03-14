@@ -217,6 +217,13 @@ html,body {
     width: 100%;
 }
 
+.wrapper-flex {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .wrapper-gray {
     padding-top: 50px;
     background-color: #808080;
@@ -257,10 +264,17 @@ html,body {
 }
 
 .about-image {
-    height: 358px;
+    /*height: 358px;*/
+    width: 537px;
     float: left;
     margin-right: 5%;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .about-image {
+        width: 375px;
+    }
 }
 
 .float-left {
@@ -307,7 +321,7 @@ html,body {
     .span-form {
         /*min-width: 479px;
         width: 100%;*/
-        min-width: 537px !important;
+        min-width: 375px !important;
         width: 100% !important;
     }
 
@@ -416,6 +430,12 @@ html,body {
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 500px) {
+    .article-image {
+        width: 375px;
+    }
+}
+
 .article-wrapper p, .form-wrapper p {
     font-family: proxima-nova-1;
     font-weight: 400;
@@ -431,6 +451,16 @@ html,body {
 
     .spacer-25 {
         height: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .article-image {
+        width: 375px;
+    }
+
+    .article-wrapper {
+        width: 375px;
     }
 }
 
@@ -686,6 +716,7 @@ html,body {
 @media screen and (max-width: 1000px) {
     .state {
         height: 50%;
+        overflow: hidden;
     }
 }
 
