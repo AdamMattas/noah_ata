@@ -199,6 +199,21 @@ html,body {
     display: none;
 }
 
+.carousel-title {
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    left: -10px;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-title {
+        width: 80%;
+    }
+}
+
 .wrapper {
     margin-top: 100px;
     position: relative;
