@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Martial arts</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+.cb-slideshow, .cb-slideshow:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+</style>		
+</head>
+<body>
+
+<div class="header-container">
+
+  <a href="index.html" title="Home">                    
+    <img class="logo" alt="ATA Logo" src="images/ATA_logo.png">
+  </a>
+
+  <div class="nav-container">
+    <a href="index.html" class="active nav-links">HOME</a>
+
+    <div class="dropdown">
+      <a class="dropbtn nav-links">ABOUT<i class="fa fa-angle-down caret"></i></a>
+      <div class="dropdown-content">
+        <a href="instructors.html">Instructors</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="dropbtn nav-links">PROGRAMS<i class="fa fa-angle-down caret"></i></a>
+      <div class="dropdown-content">
+        <a href="tiny.html">Tiny Tigers</a>
+        <a href="karate.html">Karate for Kids</a>
+        <a href="teen.html">Teens and Adults</a>
+        <a href="ATA-XT.html">ATA-Extreme</a>
+      </div>
+    </div>
+  </div>
+
+  <a class="tele-number">732-225-7575</a>
+
+</div>
+
+<!--start background slider-->
+<div class="state">
+  <ul class="cb-slideshow">
+    <li><span>Image 01</span><div><img id="imgImage" alt="image" class="uncheckimg" src="./images/martial.png" style="opacity: 1;"></div></li>
+    <li><span>Image 02</span><div><img id="imgImage" alt="image" class="uncheckimg" src="./images/martial.png" style="opacity: 1;"></div></li>
+    <li><span>Image 03</span><div><img id="imgImage" alt="image" class="uncheckimg" src="./images/martial.png" style="opacity: 1;"></div></li>
+    <li><span>Image 04</span><div><img id="imgImage" alt="image" class="uncheckimg" src="./images/martial.png" style="opacity: 1;"></div></li>
+    <li><span>Image 05</span><div><img id="imgImage" alt="image" class="uncheckimg" src="./images/martial.png" style="opacity: 1;"></div></li>
+  </ul>
+</div>
+<!--end background slider-->	
+
+<!-- Begin Form Area -->
+<div class="wrapper">
+  <div class="wrapper-50">
+
+    <div class="span6 span-form">
+      <div class="article-wrapper">
+        <img class="article-image" alt="image" src="./images/4weeks.jpg" />
+
+        <p><span class="bold">It's never been easier to begin your personal journey of self-discovery and begin learning martial arts - simply enter your information into the form here to sign up for a FREE four week Introductory Membership at Satori Academy of Martial Arts!</span></p>
+      </div>
+    </div>
+
+    <div class="span6 span-form">
+      <div class="form-wrapper">
+        <div id="ctl01_parentheaderdiv" class="mod-header">
+          <h3 class="form-title">4 WEEKS FOR $49</h3>
+          <h6 class="form-subtitle">START LEARNING MARTIAL ARTS TODAY!</h6>
+        </div>
+
+        <form id="contactform" method="post" action="php_parsers/send_form_email.php">
+          <div class="row">
+              <div class="span6 float-left">
+                <label>*First Name</label>
+                <input type="text" name="first_name" class="watermark" required />
+              </div>
+              <div class="span6 float-left">
+                <label>*Last Name</label>
+                <input type="text" name="last_name" class="watermark" required />
+              </div>
+          </div>
+
+          <div class="clear-left"></div>
+
+          <div class="row">
+            <label>*Email</label>
+            <input name="email" type="email" required />
+          </div>
+
+            <div class="row">
+              <label>Phone</label>
+              <div class="row phone-number">
+                <div class="phone-1">
+                  <input type="tel" name="telephone1" autocomplete="off" maxlength="3" class="watermark" style="color: rgb(161, 161, 161);" />
+                </div>
+                <div class="phone-2">
+                  <input type="tel" name="telephone2" autocomplete="off" maxlength="3" class="watermark" style="color: rgb(161, 161, 161);" />
+                </div>
+                <div class="phone-3">
+                  <input type="tel" name="telephone3" autocomplete="off" maxlength="4" class="watermark" style="color: rgb(161, 161, 161);" />
+                </div>
+              </div>
+            </div>
+
+            <div class="clear-left"></div>
+
+            <div class="row">
+              <label>*ZIP</label>
+              <input name="zip" type="text" required />
+            </div>
+
+            <div class="row">
+              <label>*Location</label>
+              <select name="location" autocomplete="off" required>
+                <option value="">Select</option>
+                <option value="Cranford - Westfield">Cranford - Westfield</option>
+                <option value="East Brunswick - Milltown">East Brunswick - Milltown</option>
+                <option value="Edison - Metuchen">Edison - Metuchen</option>
+                <option value="Ocean Twp - Oakhurst">Ocean Twp - Oakhurst</option>
+              </select>
+            </div>
+            <div class="art-reward-points">
+              <button class="red-submit" type="submit" title="Submit">Submit</button>
+          
+              <div class="loading pull-left"></div>
+            </div>
+        </form>
+
+        <p><span class="bold">* Indicates a required field.</span></p>
+        <p><span class="bold">*We value your privacy and will never share your information with anyone, ever! <br></span></p>
+      </div>
+    </div>
+    <div class="clear-left"></div>
+  </div>  
+</div>
+<!-- End Form Area -->
+
+<!-- Begin About Us -->
+<div class="wrapper">
+  <div class="about-wrap">
+    <img class="about-image" alt="image" src="./images/ata.jpg" />
+
+    <p>Welcome to the ATA Black Belt Academy of Woodbridge, New Jersey. We are a martial arts academy that focuses on training the minds and bodies of our future leaders one black belt at a time through the training tools of Song Ahm Taekwondo.</p>
+
+    <p>We are a black belt school and our goal is to make our students black belt leaders. By achieving your black belt at this academy, you have improved yourself mentally and physically and have attained many of the benefits and life skills that make you a successful member of your family, school and/or work and community.</p>
+
+    <p>Our classes are modern, exciting, dynamic and always improving as our parent organization, the American Taekwondo Association (ATA), constantly seeks out and researches the most effective and safe training protocols in the martial arts industry.</p>
+
+    <p>Find out more about our Parent Organization by visiting www.ataonline.com.</p>
+    <div class="clear-left"></div>
+  </div>
+</div>
+<!-- End About Us -->
+
+<!--4 images start-->
+<div class="wrapper flexing">
+  <div>
+    <a href="tiny.html">
+      <span class="border-anim-top"></span>
+      <span class="border-anim-right"></span>
+      <span class="border-anim-bottom"></span>
+      <span class="border-anim-left"></span>
+      <span class="flexing-text">TINY TIGERS</span>
+      <img src="images/IMG_4597.JPG" alt="" />
+    </a>
+  </div>
+  <div>
+    <a href="karate.html">
+      <span class="border-anim-top"></span>
+      <span class="border-anim-right"></span>
+      <span class="border-anim-bottom"></span>
+      <span class="border-anim-left"></span>
+      <span class="flexing-text">KARATE FOR KIDS</span>
+      <img src="images/kid.jpg" alt />
+    </a>
+  </div>
+  <div>
+    <a href="teen.html">
+      <span class="border-anim-top"></span>
+      <span class="border-anim-right"></span>
+      <span class="border-anim-bottom"></span>
+      <span class="border-anim-left"></span>
+      <span class="flexing-text">TEEN / ADULT PROGRAMS</span>
+      <img src="images/IMG_4793.JPG" alt />
+    </a>
+  </div>
+  <div>
+    <a href="ATA-XT.html">
+      <span class="border-anim-top"></span>
+      <span class="border-anim-right"></span>
+      <span class="border-anim-bottom"></span>
+      <span class="border-anim-left"></span>
+      <span class="flexing-text">ATA - XTREME(XMA)</span>
+      <img src="images/IMG_4499.JPG" alt />
+    </a>
+  </div>
+</div>
+<!--4 images end-->
+
+
+<!--video-->
+<div class="wrapper">
+  <div class="about-wrap">
+    <h1 class="vid-title">ATA - Martial Arts</h1>
+    <div class="vid-player">
+      <iframe src="https://www.youtube.com/embed/7M56s5gRAPM?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h1 class="vid-title vid-subtitle">4 WEEKS FOR $49</h1>
+  </div>  
+</div>
+<!--video end-->
+
+<!--testimonials-->
+<div class="wrapper">
+  <div class="wrapper-gray">
+    <h3 class="testimonial-title">OUR HAPPY STUDENTS AND PARENTS</h3>
+    <div class="testimonial-wrap">
+      
+      <div id="carousel">
+        <div class="btn-bar">
+          <div id="buttons">
+            <a id="prev" href="#"></a>
+            <a id="next" href="#"></a>
+          </div>
+        </div>
+
+        <div id="slides">
+          <ul>
+            <li class="slide">
+              <div class="quoteContainer">
+                <p class="fp-el">My daughter and I have been coming here for over 7 years. Great family atmosphere and the people there always make you feel welcome. I highly recommend Satori to all my friends and family.</p>
+                <div class="testimonial-vcard" style="clear:both;">
+                  <h4>William J.</h4>
+                  <h5>Great Family Atmosphere</h5>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <p class="fp-el">My daughter and I have been coming here for over 7 years. Great family atmosphere and the people there always make you feel welcome. I highly recommend Satori to all my friends and family.</p>
+                <div class="testimonial-vcard" style="clear:both;">
+                  <h4>William J.</h4>
+                  <h5>Great Family Atmosphere</h5>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <p class="fp-el">My daughter and I have been coming here for over 7 years. Great family atmosphere and the people there always make you feel welcome. I highly recommend Satori to all my friends and family.</p>
+                <div class="testimonial-vcard" style="clear:both;">
+                  <h4>William J.</h4>
+                  <h5>Great Family Atmosphere</h5>
+                </div>
+              </div>
+            </li>
+
+            <li class="slide">
+              <div class="quoteContainer">
+                <p class="fp-el">My daughter and I have been coming here for over 7 years. Great family atmosphere and the people there always make you feel welcome. I highly recommend Satori to all my friends and family.</p>
+                <div class="testimonial-vcard" style="clear:both;">
+                  <h4>William J.</h4>
+                  <h5>Great Family Atmosphere</h5>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="testimonial-link">
+          <a href="testimonials.html">TESTIMONIALS</a>
+        </div>
+
+      </div>
+
+    </div> 
+  </div>
+</div>
+<!--testimonials end-->
+
+<div class="wrapper-gray">
+  <img src="images/IMG_4488.JPG" style="width: 50%;float: left;" />
+  <img src="images/IMG_4489.JPG" style="width: 50%;float: left;" />
+  <div class="footer">
+    <div class="footer-left">
+      <p>Martial Art &copy; 2017</p>
+    </div>
+    <div class="footer-right">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-linkedin"></i></a>
+      <a href=""><i class="fa fa-google-plus"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function () {
+  //rotation speed and timer
+  var speed = 5000;
+  
+  var run = setInterval(rotate, speed);
+  var slides = $('.slide');
+  var container = $('#slides ul');
+  var elm = container.find(':first-child').prop("tagName");
+  console.log('ELM!!!: ', elm);
+  var item_width = container.width();
+  var previous = 'prev'; //id of previous button
+  var next = 'next'; //id of next button
+  slides.width(item_width); //set the slides to the correct pixel width
+  container.parent().width(item_width);
+  container.width(slides.length * item_width); //set the slides container to the correct total width
+  container.find(elm + ':first').before(container.find(elm + ':last'));
+  resetSlides();
+  
+  
+  //if user clicked on prev button
+  
+  $('#buttons a').click(function (e) {
+      //slide the item
+      
+      if (container.is(':animated')) {
+          return false;
+      }
+      if (e.target.id == previous) {
+          container.stop().animate({
+              'left': 0
+          }, 1500, function () {
+              container.find(elm + ':first').before(container.find(elm + ':last'));
+              resetSlides();
+          });
+      }
+      
+      if (e.target.id == next) {
+          container.stop().animate({
+              'left': item_width * -2
+          }, 1500, function () {
+              container.find(elm + ':last').after(container.find(elm + ':first'));
+              resetSlides();
+          });
+      }
+      
+      //cancel the link behavior            
+      return false;
+      
+  });
+  
+  //if mouse hover, pause the auto rotation, otherwise rotate it    
+  container.parent().mouseenter(function () {
+      clearInterval(run);
+  }).mouseleave(function () {
+      run = setInterval(rotate, speed);
+  });
+  
+  
+  function resetSlides() {
+      //and adjust the container so current is in the frame
+      container.css({
+          'left': -1 * item_width
+      });
+  }
+    
+});
+//a simple function to click next link
+//a timer will call this function, and the rotation will begin
+
+function rotate() {
+    $('#next').click();
+}
+
+  //========Begin Check For E-mail Success========
+  var successUrl = getUrlVars()["success"];
+
+  function getUrlVars() {
+
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+    });
+    return vars;
+
+  }
+
+  console.log(successUrl);
+  if(successUrl) {
+    alert('Email sent successfully.')
+  }
+  //========End Check For E-mail Success========
+</script>
+</body>
+</html>
