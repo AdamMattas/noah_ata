@@ -239,6 +239,12 @@ html,body {
     }
 }
 
+/*@media screen and (max-width: 900px) {
+    .wrapper-50 {
+        width: 100%;
+    }
+}*/
+
 .about-wrap {
     padding: 0px 5% 0px 5%;
 }
@@ -260,7 +266,8 @@ html,body {
 
 @media screen and (max-width: 500px) {
     .about-image {
-        width: 375px;
+        /*width: 375px;*/
+        width: 100%;
     }
 }
 
@@ -308,7 +315,7 @@ html,body {
     .span-form {
         /*min-width: 479px;
         width: 100%;*/
-        min-width: 375px !important;
+        /*min-width: 375px !important;*/
         width: 100% !important;
     }
 
@@ -419,7 +426,8 @@ html,body {
 
 @media screen and (max-width: 500px) {
     .article-image {
-        width: 375px;
+        /*width: 375px;*/
+        width: 100%;
     }
 }
 
@@ -443,11 +451,13 @@ html,body {
 
 @media screen and (max-width: 500px) {
     .article-image {
-        width: 375px;
+        /*width: 375px;*/
+        width: 100%;
     }
 
     .article-wrapper {
-        width: 375px;
+        /*width: 375px;*/
+        width: 100%;
     }
 }
 
