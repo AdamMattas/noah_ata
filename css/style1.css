@@ -214,6 +214,36 @@ html,body {
     }
 }
 
+#mob-tel-number {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background-color: #a80303;
+    padding: 15px 0px 15px 0px;
+}
+
+#mob-tel-number > a {
+    position: absolute;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    #mob-tel-number {
+        display: block;
+    }
+}
+
 .wrapper {
     margin-top: 100px;
     position: relative;
