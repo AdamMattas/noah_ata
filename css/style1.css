@@ -211,6 +211,7 @@ html,body {
 @media screen and (max-width: 500px) {
     .carousel-title {
         width: 50%;
+        left: 0px;
     }
 }
 
