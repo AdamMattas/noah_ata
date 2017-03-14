@@ -64,10 +64,28 @@
       <a href="index.html">Home</a>
     </div>
     <div>
-      <a href="index.html">About</a>
+      <a id="mob-about" href="#">About<i class="fa fa-angle-down caret"></i></a>
+      <div id="mob-about-subs" class="mob-sub" style="display: none;">
+        <a href="instructors.html">Instructors</a>  
+      </div>
+      
     </div>
     <div>
-      <a href="index.html">Programs</a>
+      <a id="mob-programs" href="#">Programs<i class="fa fa-angle-down caret"></i></a>
+      <div  id="mob-programs-subs" style="display: none;">
+        <div class="mob-sub">
+          <a href="tiny.html">Tiny Tigers</a> 
+        </div>
+        <div class="mob-sub">
+          <a href="karate.html">Karate for Kids</a> 
+        </div>
+        <div class="mob-sub">
+          <a href="teen.html">Teens and Adults</a> 
+        </div>
+        <div class="mob-sub">
+          <a href="ATA-XT.html">ATA-Extreme</a> 
+        </div>
+      </div>
     </div>
     <div>
       <a href="#">732-225-7575</a>
@@ -341,8 +359,15 @@
 $(document).ready(function() {
 
   $('#mob-bars').click(function() {
-    console.log('Click');
     $("#mob-content").toggle();
+  });
+
+  $('#mob-about').click(function() {
+    $("#mob-about-subs").toggle();
+  });
+
+  $('#mob-programs').click(function() {
+    $("#mob-programs-subs").toggle();
   });
 
 

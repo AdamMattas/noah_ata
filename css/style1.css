@@ -30,7 +30,7 @@ html,body {
     letter-spacing: 2px;
     color: #fff;
     text-shadow: 0 0 0 rgba(168,3,3,1);
-    transition: all 0.5s;    
+    /*transition: all 0.5s; */   
 }
 
 .tele-number:hover {
@@ -139,6 +139,13 @@ html,body {
     background-color: #a80303;
     margin-bottom: 7px;
     z-index: 1;
+    transition: all 0.5s;
+}
+
+#mob-bars:hover .bar {
+    /*text-shadow: 0 0 0 rgba(255,5,13,1);*/
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(255,16,3,.5);
+    box-shadow: 5px 5px 10px 1px rgba(255,16,3,.5);   
 }
 
 /* Dropdown Button */
@@ -162,6 +169,7 @@ html,body {
     color: #000000;
     padding: 12px 16px;
     text-decoration: none;
+    border-bottom: 1px solid #222222;
     display: block;
 }
 
@@ -172,12 +180,17 @@ html,body {
     color: #ffffff;
 }
 
-@media screen and (min-width: 601px) {
-    .dropdown-content-mob {
-        display: none;
-    }
+.mob-sub {
+    background-color: #780202; 
+}
 
-    #mob-bars {
+.mob-sub a {
+    padding-left: 25px; 
+}
+
+
+@media screen and (min-width: 601px) {
+    .dropdown-content-mob, #mob-bars, #mob-about-subs, #mob-programs-subs {
         display: none;
     }
 }
