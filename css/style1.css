@@ -68,10 +68,7 @@ html,body {
 
 /* Dropdown Button */
 .dropbtn {
-    /*background-color: #4CAF50;*/
     color: white;
-    /*padding: 16px;
-    font-size: 16px;*/
     border: none;
     cursor: pointer;
 }
@@ -121,6 +118,81 @@ html,body {
     transition: all 0.5s;
     color: #a80303;
 }
+
+@media screen and (max-width: 600px) {
+    #main-nav {
+        display: none;
+    }
+
+    #main-tel {
+        display: none;
+    }
+
+    #mob-bars {
+        display: block;
+    }
+}
+
+.bar {
+    width: 50px;
+    height: 7px;
+    background-color: #a80303;
+    margin-bottom: 7px;
+    z-index: 1;
+}
+
+/* Dropdown Button */
+.dropbtn-mob {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-mob {
+    position: absolute;
+    background-color: #a80303;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-mob a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-mob a:hover {
+    transition: all 0.5s;
+    background-color: #780202;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 601px) {
+    .dropdown-content-mob {
+        display: none;
+    }
+
+    #mob-bars {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hide {
     display: none;

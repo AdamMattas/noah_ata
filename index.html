@@ -23,13 +23,14 @@
 </head>
 <body>
 
+<!-- Begin Header -->
 <div class="header-container">
 
   <a href="index.html" title="Home">                    
     <img class="logo" alt="ATA Logo" src="images/ATA_logo.png">
   </a>
 
-  <div class="nav-container">
+  <div id="main-nav" class="nav-container">
     <a href="index.html" class="active nav-links">HOME</a>
 
     <div class="dropdown">
@@ -50,9 +51,31 @@
     </div>
   </div>
 
-  <a class="tele-number">732-225-7575</a>
+  <a id="main-tel" class="tele-number">732-225-7575</a>
+
+  <a id="mob-bars" class="dropbtn-mob nav-links">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </a>
+
+  <div id="mob-content" class="dropdown-content-mob" style="display: none;">
+    <div>
+      <a href="index.html">Home</a>
+    </div>
+    <div>
+      <a href="index.html">About</a>
+    </div>
+    <div>
+      <a href="index.html">Programs</a>
+    </div>
+    <div>
+      <a href="#">732-225-7575</a>
+    </div>
+  </div>
 
 </div>
+<!-- End Header -->
 
 <!--start background slider-->
 <div class="state">
@@ -314,8 +337,15 @@
 </div>
 
 
-<script>
-$(document).ready(function () {
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $('#mob-bars').click(function() {
+    console.log('Click');
+    $("#mob-content").toggle();
+  });
+
+
   //rotation speed and timer
   var speed = 5000;
   
@@ -405,7 +435,8 @@ function rotate() {
   if(successUrl) {
     alert('Email sent successfully.')
   }
-  //========End Check For E-mail Success========
+  //========End Check For E-mail Success========  
 </script>
+<!-- <script src="./js/script.js"></script> -->
 </body>
 </html>
