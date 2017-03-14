@@ -195,18 +195,6 @@ html,body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .hide {
     display: none;
 }
@@ -715,7 +703,7 @@ html,body {
 
 @media screen and (max-width: 1000px) {
     .state {
-        height: 50%;
+        height: 75%;
         overflow: hidden;
     }
 }
