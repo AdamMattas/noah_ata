@@ -1220,12 +1220,6 @@ width: 100%;
     width: 50%; /* Could be more or less, depending on screen size */
 }
 
-@media screen and (max-width: 600px) {
-  .modal-content {
-    margin: 150px auto;
-  }
-}
-
 .inst-image-cont {
     margin: 0 auto;
     width: 60%;
@@ -1248,4 +1242,21 @@ width: 100%;
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    margin: 150px auto;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .inst-image-cont {
+    width: 90%;
+   }
+
+   .close {
+        margin-right: 25px;
+        margin-top: 10px;
+    }
 }
