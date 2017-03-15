@@ -239,6 +239,7 @@ html,body {
   .carousel-title-half {
     left: 0px;
     right: 0px;
+    bottom: 0px;
     padding: 35px 25px 25px 25px;
   }
 }

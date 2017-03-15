@@ -22,7 +22,7 @@
 
 .instructor-card {
   float: left;
-  width: 350px;
+  width: 100%;
   height: 680px;
   margin: 0px;
   cursor: pointer;
