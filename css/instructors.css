@@ -22,10 +22,16 @@
 
 .instructor-card {
   float: left;
-  width: 100%;
+  width: 350px;
   height: 680px;
   margin: 0px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .instructor-card {
+    width: 100%;
+  }
 }
 
 .instructor-label {
