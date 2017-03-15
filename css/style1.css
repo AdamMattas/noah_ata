@@ -30,6 +30,7 @@ html,body {
     padding: 8px 15px 8px 15px;
     letter-spacing: 2px;
     color: #fff;
+    text-decoration: none;
     text-shadow: 0 0 0 rgba(168,3,3,1); 
 }
 
@@ -50,13 +51,14 @@ html,body {
 }
 
 .active {
-    color: #a80303;
+    color: #a80303 !important;
 }
 
 .nav-links {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
+    color: #ffffff;
     text-decoration: none; 
     margin-right: 20px;
     padding-bottom: 15px; 
@@ -213,6 +215,32 @@ html,body {
         width: 50%;
         left: 0px;
     }
+}
+
+.carousel-title-half {
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    bottom: 50px;
+    border: 5px solid #ffffff;
+    padding: 35px 25% 25px 25px;
+}
+
+.carousel-title-half > h1 {
+    font-family: p22-underground-1;
+    font-weight: 600;
+    font-size: 55px;
+    color: #ffffff;
+    line-height: 20px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-title-half {
+    left: 0px;
+    right: 0px;
+    padding: 35px 25px 25px 25px;
+  }
 }
 
 #mob-tel-number {
@@ -757,7 +785,18 @@ html,body {
 /*end testimonial styling*/
 
 
+.state-half {
+    position: relative;
+    height: 50%;
+}
 
+@media screen and (max-width: 1000px) {
+    .state-half {
+        margin-top: 120px;
+        height: 25%;
+        overflow: hidden;
+    }
+}
 
 .state {
     position: relative;

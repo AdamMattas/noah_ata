@@ -5,7 +5,7 @@ var modal = document.getElementById('myModal');
 var modalImage = document.getElementById('modal-inst-image');
 
 // Get the button that opens the modal
-var btn = document.getElementsByClassName("inst-image");
+var btn = document.getElementsByClassName("instructor-card");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
