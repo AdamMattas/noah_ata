@@ -818,21 +818,23 @@ html,body {
 
 
 .state-half {
+    margin-top: 120px;
     position: relative;
     height: 50%;
 }
 
 @media screen and (max-width: 1000px) {
     .state-half {
-        margin-top: 120px;
+        /*margin-top: 120px;*/
         height: 25%;
         overflow: hidden;
     }
 }
 
 .state {
+    margin-top: 120px;
     position: relative;
-    height: 100%;
+    height: calc(100% - 120px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -912,7 +914,8 @@ html,body {
     line-height: 200px; 
 }
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/1.jpg) 
+    background-image: url(../images/1.jpg);
+    background-position: top;
 	/*background-attachment:fixed;*/
 }
 .cb-slideshow li:nth-child(2) span { 
@@ -944,6 +947,7 @@ html,body {
 }
 .cb-slideshow li:nth-child(5) span { 
     background-image: url(../images/5.jpg);
+    background-position: top;
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
