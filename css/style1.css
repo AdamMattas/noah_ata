@@ -1220,6 +1220,12 @@ width: 100%;
     width: 50%; /* Could be more or less, depending on screen size */
 }
 
+@media screen and (max-width: 600px) {
+  .modal-content {
+    margin: 150px auto;
+  }
+}
+
 .inst-image-cont {
     margin: 0 auto;
     width: 60%;
