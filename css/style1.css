@@ -922,6 +922,14 @@ html,body {
         display: block;
     }
 
+    .sched-list-mob p{
+        font-size: 16px;
+    }
+
+    .tg-wrap p {
+        font-size: 16px;    
+    }
+
     .tg th {
         font-size: 10px;
     }
