@@ -939,6 +939,38 @@ html,body {
     .download-sched {
         margin: 0px 0px 25px 0px;
     }
+
+    .sched-top span {
+        display: none;   
+    }
+
+    /*.sched-top > th:nth-child(1) > span {
+        display: block;   
+    }*/
+
+    .sched-top > th:nth-child(2):after {
+        content: 'MON';
+    }
+
+    .sched-top > th:nth-child(3):after {
+        content: 'TUES';
+    }
+
+    .sched-top > th:nth-child(4):after {
+        content: 'WED';
+    }
+
+    .sched-top > th:nth-child(5):after {
+        content: 'THURS';
+    }
+
+    .sched-top > th:nth-child(6):after {
+        content: 'FRI';
+    }
+
+    .sched-top > th:nth-child(7):after {
+        content: 'SAT';
+    }
 }
 /*End Schedule Styling*/
 
