@@ -923,16 +923,16 @@ html,body {
     }
 
     .tg th {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .tg th:first-child {
-        font-size: 8px; 
+        font-size: 12px; 
         padding-left: 5px;   
     }
 
     .center td:first-child {
-        font-size: 8px;
+        font-size: 12px;
         padding-left: 5px;
     }
 
@@ -943,10 +943,6 @@ html,body {
     .sched-top span {
         display: none;   
     }
-
-    /*.sched-top > th:nth-child(1) > span {
-        display: block;   
-    }*/
 
     .sched-top > th:nth-child(2):after {
         content: 'MON';
