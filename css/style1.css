@@ -891,28 +891,6 @@ html,body {
     font-weight: bolder;
 }
 
-@media screen and (max-width: 600px) {
-    .sched-list {
-        display: none;
-    }
-
-    .sched-list-mob {
-        display: block;
-    }
-
-    .tg th {
-        font-size: 8px;
-    }
-
-    .tg th:first-child {
-        font-size: 12px;    
-    }
-
-    .center td:first-child {
-        font-size: 12px;
-    }
-}
-
 .download-sched {
     background-color: #222222;
     font-family: Arial, sans-serif;
@@ -933,6 +911,32 @@ html,body {
     font-family: Arial, sans-serif;
     font-weight: 600;
     padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .sched-list {
+        display: none;
+    }
+
+    .sched-list-mob {
+        display: block;
+    }
+
+    .tg th {
+        font-size: 8px;
+    }
+
+    .tg th:first-child {
+        font-size: 12px;    
+    }
+
+    .center td:first-child {
+        font-size: 12px;
+    }
+
+    .download-sched {
+        margin: 0px 0px 25px 0px;
+    }
 }
 /*End Schedule Styling*/
 
