@@ -128,7 +128,7 @@
       </div>
     </div>
 
-    <div class="span6 span-form">
+    <div id="form-section-target" class="span6 span-form">
       <div class="form-wrapper">
         <div id="ctl01_parentheaderdiv" class="mod-header">
           <h3 class="form-title">4 WEEKS FOR $49</h3>
@@ -139,7 +139,7 @@
           <div class="row">
               <div class="span6 float-left">
                 <label>*First Name</label>
-                <input type="text" name="first_name" class="watermark" required />
+                <input id="first-name" type="text" name="first_name" class="watermark" required />
               </div>
               <div class="span6 float-left">
                 <label>*Last Name</label>
@@ -273,6 +273,7 @@
       <iframe src="https://www.youtube.com/embed/7M56s5gRAPM?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <h1 class="vid-title vid-subtitle">4 WEEKS FOR $49</h1>
+    <a id="action-button" class="text-dec-none"><div>Get Started Now</div></a>
   </div>  
 </div>
 <!--video end-->
@@ -379,6 +380,13 @@ $(document).ready(function() {
     $("#mob-programs-subs").toggle();
   });
 
+  $('#action-button').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#form-section-target").offset().top - 125
+    }, 500);
+    $('#first-name').focus();
+  });
+
 
   //rotation speed and timer
   var speed = 5000;
@@ -465,7 +473,6 @@ function rotate() {
 
   }
 
-  console.log(successUrl);
   if(successUrl) {
     alert('Email sent successfully.')
   }

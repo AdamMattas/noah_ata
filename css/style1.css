@@ -551,7 +551,7 @@ html,body {
 .article-wrapper p, .form-wrapper p {
     font-family: proxima-nova-1;
     font-weight: 400;
-    color: #000;
+    color: #000000;
     font-size: 17px;
     line-height: 30px;
 }
@@ -701,6 +701,30 @@ html,body {
 
 .vid-subtitle {
     font-size: 45px;
+}
+
+#action-button > div {
+    position: relative;
+    margin: 0 auto;
+    max-width: 620px;
+    padding: 10px 25px 10px 25px;
+    border: 4px solid #f00;
+    background-color: #f00;
+    color: #ffffff;
+    font-family: ff-dax-compact-web-pro-1;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+#action-button > div:hover {
+    background-color: #ffffff;
+    color: #f00;
+}
+
+.text-dec-none {
+    text-decoration: none;    
 }
 
 .vid-player {
