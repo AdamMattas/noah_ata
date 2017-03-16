@@ -901,11 +901,15 @@ html,body {
     }
 
     .tg th {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .tg th:first-child {
-        font-size: 14px;    
+        font-size: 12px;    
+    }
+
+    .center td:first-child {
+        font-size: 12px;
     }
 }
 
