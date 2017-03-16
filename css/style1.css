@@ -927,11 +927,11 @@ html,body {
     }
 
     .tg th:first-child {
-        font-size: 12px;    
+        font-size: 10px;    
     }
 
     .center td:first-child {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .download-sched {
